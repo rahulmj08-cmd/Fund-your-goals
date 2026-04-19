@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Your Goal-Based Planning — Rahul MJ</title>
+  <meta name="description" content="Create your personalized goal-based investment plan. Map your dreams to mutual fund strategies.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dark-styles.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <a href="/" class="back">← Back</a>
+    <div class="brand">Fund Your <span>Goals</span></div>
+  </div>
+
+  <div class="page-content planning-page">
+    <div class="container">
+      
+      <!-- Hero -->
+      <div class="page-hero">
+        <h1>Start Your <span>Goal-Based</span> Plan</h1>
+        <p>Comprehensive financial planning tailored to your life goals. Let's map your dreams to the right investment strategy.</p>
+      </div>
+
+      <!-- Step Indicator -->
+      <div class="steps-indicator">
+        <div class="step-dot active" data-step="1"></div>
+        <div class="step-dot" data-step="2"></div>
+        <div class="step-dot" data-step="3"></div>
+        <div class="step-dot" data-step="4"></div>
+      </div>
+
+      <!-- Form -->
+      <form class="planning-form" name="goal-planning" method="POST" data-netlify="true" id="planningForm">
+        <input type="hidden" name="form-name" value="goal-planning">
+
+        <!-- Step 1: Personal Info -->
+        <div class="plan-section active" data-step="1">
+          <h2 class="step-title">Personal Information</h2>
+          <div class="form-grid">
+            <div class="form-field">
+              <label>Full Name *</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-field">
+              <label>Age *</label>
+              <input type="number" name="age" min="18" max="100" required>
+            </div>
+            <div class="form-field">
+              <label>Email *</label>
+              <input type="email" name="email" required>
+            </div>
+            <div class="form-field">
+              <label>Phone *</label>
+              <input type="tel" name="phone" required>
+            </div>
+            <div class="form-field">
+              <label>City *</label>
+              <input type="text" name="city" required>
+            </div>
+            <div class="form-field">
+              <label>Occupation *</label>
+              <input type="text" name="occupation" required>
+            </div>
+          </div>
+          <div class="step-actions">
+            <button type="button" class="btn-next" onclick="nextStep(2)">Continue →</button>
+          </div>
+        </div>
+
+        <!-- Step 2: Financial Situation -->
+        <div class="plan-section" data-step="2">
+          <h2 class="step-title">Financial Situation</h2>
+          <div class="form-field-full">
+            <label>Annual Income Range</label>
+            <select name="income">
+              <option value="">Select range</option>
+              <option value="0-5L">₹0 - ₹5 Lakh</option>
+              <option value="5-10L">₹5 - ₹10 Lakh</option>
+              <option value="10-15L">₹10 - ₹15 Lakh</option>
+              <option value="15-25L">₹15 - ₹25 Lakh</option>
+              <option value="25L+">₹25 Lakh+</option>
+            </select>
+          </div>
+          <div class="form-field-full">
+            <label>Monthly Investable Surplus</label>
+            <select name="surplus">
+              <option value="">Select range</option>
+              <option value="0-10k">₹0 - ₹10,000</option>
+              <option value="10-25k">₹10,000 - ₹25,000</option>
+              <option value="25-50k">₹25,000 - ₹50,000</option>
+              <option value="50k+">₹50,000+</option>
+            </select>
+          </div>
+          <div class="form-field-full">
+            <label>Existing Investments</label>
+            <select name="existing">
+              <option value="">Select</option>
+              <option value="none">No investments yet</option>
+              <option value="small">Small portfolio (< ₹5L)</option>
+              <option value="medium">Medium portfolio (₹5-25L)</option>
+              <option value="large">Large portfolio (> ₹25L)</option>
+            </select>
+          </div>
+          <div class="step-actions">
+            <button type="button" class="btn-back" onclick="prevStep(1)">← Back</button>
+            <button type="button" class="btn-next" onclick="nextStep(3)">Continue →</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Goals -->
+        <div class="plan-section" data-step="3">
+          <h2 class="step-title">Your Financial Goals</h2>
+          <div class="form-field-full">
+            <label>Select your goals (check all that apply)</label>
+            <div class="checkbox-grid">
+              <label class="checkbox-card">
+                <input type="checkbox" name="goals[]" value="retirement">
+                <span class="checkbox-label">
+                  <span class="emoji">🏖️</span>
+                  <span>Retirement Planning</span>
+                </span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" name="goals[]" value="education">
+                <span class="checkbox-label">
+                  <span class="emoji">🎓</span>
+                  <span>Children's Education</span>
+                </span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" name="goals[]" value="home">
+                <span class="checkbox-label">
+                  <span class="emoji">🏡</span>
+                  <span>Home Purchase</span>
+                </span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" name="goals[]" value="wealth">
+                <span class="checkbox-label">
+                  <span class="emoji">💰</span>
+                  <span>Wealth Creation</span>
+                </span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" name="goals[]" value="emergency">
+                <span class="checkbox-label">
+                  <span class="emoji">🛡️</span>
+                  <span>Emergency Fund</span>
+                </span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" name="goals[]" value="other">
+                <span class="checkbox-label">
+                  <span class="emoji">✨</span>
+                  <span>Other Goals</span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="form-field-full">
+            <label>Investment Timeline</label>
+            <select name="timeline">
+              <option value="">Select</option>
+              <option value="0-3y">Short-term (0-3 years)</option>
+              <option value="3-5y">Medium-term (3-5 years)</option>
+              <option value="5-10y">Long-term (5-10 years)</option>
+              <option value="10y+">Very long-term (10+ years)</option>
+            </select>
+          </div>
+          <div class="form-field-full">
+            <label>Risk Appetite</label>
+            <select name="risk">
+              <option value="">Select</option>
+              <option value="conservative">Conservative (safety first)</option>
+              <option value="moderate">Moderate (balanced)</option>
+              <option value="aggressive">Aggressive (high growth)</option>
+            </select>
+          </div>
+          <div class="step-actions">
+            <button type="button" class="btn-back" onclick="prevStep(2)">← Back</button>
+            <button type="button" class="btn-next" onclick="nextStep(4)">Continue →</button>
+          </div>
+        </div>
+
+        <!-- Step 4: Final Details -->
+        <div class="plan-section" data-step="4">
+          <h2 class="step-title">Tell Me More</h2>
+          <div class="form-field-full">
+            <label>Describe your financial goals and any specific concerns</label>
+            <textarea name="message" rows="6" placeholder="Example: I want to retire at 50 with ₹5 Cr corpus, also planning for kids' education abroad in 10 years..."></textarea>
+          </div>
+          
+          <div class="notice-box">
+            <strong>🔒 Privacy Notice:</strong> Your information will be kept strictly confidential. As a sub-broker with Wealthy, your data may be shared with Wealthy platform for investment processing once you decide to proceed.
+          </div>
+
+          <div class="consent-wrapper">
+            <label class="consent-label">
+              <input type="checkbox" name="consent" required>
+              <span>I consent to sharing my information for financial planning services and understand it may be shared with Wealthy platform for investment processing.</span>
+            </label>
+          </div>
+
+          <div class="step-actions">
+            <button type="button" class="btn-back" onclick="prevStep(3)">← Back</button>
+            <button type="submit" class="btn-submit">Submit Planning Request</button>
+          </div>
+
+          <p class="form-note">This service is currently being finalized. I'll reach out within 48 hours to schedule your initial consultation.</p>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="dark-script.js"></script>
+</body>
+</html>

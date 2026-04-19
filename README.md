@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fund Your Goals
 
 Goal-based investment planning platform for families.
@@ -32,3 +33,7 @@ npx vercel --prod
 ARN: 266912 · Valid till: 11 Mar 2029
 
 © 2026 Fund Your Goals
+=======
+# Fund-your-goals
+Goal-based investment planning website
+>>>>>>> 7629f9bb29bece5450a8000d196bfbdefd2b8ae5

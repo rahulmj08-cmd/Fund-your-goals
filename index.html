@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul MJ — Goal-Based Investment Planning | Fund Your Goals</title>
+  <meta name="description" content="AMFI Registered Mutual Fund Distributor (ARN: 266912). Goal-based investment planning, weekly market insights, and comprehensive financial advisory in Bengaluru.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dark-styles.css">
+</head>
+<body>
+  <!-- Animated Market Background -->
+  <div class="market-bg">
+    <canvas id="marketCanvas"></canvas>
+  </div>
+
+  <!-- Ticker Tape -->
+  <div class="ticker-tape">
+    <div class="ticker-track" id="tickerTrack">
+      <div class="ticker-item"><span class="name">SENSEX</span><span class="price">73,481</span><span class="change up">+0.8%</span></div>
+      <div class="ticker-item"><span class="name">NIFTY 50</span><span class="price">22,368</span><span class="change up">+0.6%</span></div>
+      <div class="ticker-item"><span class="name">BANK NIFTY</span><span class="price">47,520</span><span class="change down">-0.3%</span></div>
+      <div class="ticker-item"><span class="name">NIFTY IT</span><span class="price">34,782</span><span class="change up">+1.2%</span></div>
+      <div class="ticker-item"><span class="name">GOLD</span><span class="price">₹62,450</span><span class="change up">+0.4%</span></div>
+      <div class="ticker-item"><span class="name">USD/INR</span><span class="price">83.12</span><span class="change down">-0.1%</span></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="ticker-item"><span class="name">SENSEX</span><span class="price">73,481</span><span class="change up">+0.8%</span></div>
+      <div class="ticker-item"><span class="name">NIFTY 50</span><span class="price">22,368</span><span class="change up">+0.6%</span></div>
+      <div class="ticker-item"><span class="name">BANK NIFTY</span><span class="price">47,520</span><span class="change down">-0.3%</span></div>
+      <div class="ticker-item"><span class="name">NIFTY IT</span><span class="price">34,782</span><span class="change up">+1.2%</span></div>
+      <div class="ticker-item"><span class="name">GOLD</span><span class="price">₹62,450</span><span class="change up">+0.4%</span></div>
+      <div class="ticker-item"><span class="name">USD/INR</span><span class="price">83.12</span><span class="change down">-0.1%</span></div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="page-content">
+    <div class="container">
+      
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-logo">FYG</div>
+        <h1><span>Fund Your Goals</span></h1>
+        <p class="subtitle">Goal-based investment planning powered by expertise and technology</p>
+        <div class="hero-badges">
+          <div class="hero-badge"><span class="dot"></span> ARN: 266912</div>
+          <div class="hero-badge">AMFI Registered</div>
+          <div class="hero-badge">Bengaluru</div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about-section">
+        <p>
+          I help people achieve their financial goals through <strong>systematic, goal-focused investing</strong>. 
+          As an AMFI-registered distributor and sub-broker with <strong>Wealthy</strong>, I combine deep market 
+          knowledge with cutting-edge technology to provide personalized investment strategies.
+        </p>
+      </section>
+
+      <!-- CTA Planning -->
+      <a href="/goal-planning.html" class="cta-planning">
+        Start Your Goal-Based Plan
+        <small>Comprehensive financial planning tailored to your dreams</small>
+      </a>
+
+      <!-- Content Links -->
+      <div class="section-wrapper">
+        <div class="section-label">WHERE I SHARE</div>
+        <div class="links">
+          <a href="https://instagram.com/fundyourgoals" target="_blank" class="link-card">
+            <div class="link-icon instagram">
+              <svg fill="#fff" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+            <div class="link-content">
+              <div class="link-title">Instagram</div>
+              <div class="link-desc">Daily tips & visual breakdowns @fundyourgoals</div>
+            </div>
+          </a>
+
+          <a href="https://substack.com/@fundyourgoals" target="_blank" class="link-card">
+            <div class="link-icon substack">
+              <svg fill="#fff" viewBox="0 0 24 24"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+            </div>
+            <div class="link-content">
+              <div class="link-title">Sunday Series</div>
+              <div class="link-desc">Weekly market analysis on Substack</div>
+            </div>
+          </a>
+
+          <a href="https://wealthy.in/partners/shilp49728/?lang=en" target="_blank" class="link-card">
+            <div class="link-icon wealthy">
+              <svg fill="#fff" viewBox="0 0 24 24"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/></svg>
+            </div>
+            <div class="link-content">
+              <div class="link-title">Start Investing</div>
+              <div class="link-desc">Quick onboarding via Wealthy platform</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Instagram Showcase -->
+      <div class="section-wrapper">
+        <div class="section-label">LATEST FROM INSTAGRAM</div>
+        <div class="instagram-carousel-auto">
+          <div class="carousel-track-auto" id="carouselAuto">
+            <div class="insta-post-auto">
+              <div class="insta-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+              <p class="insta-caption">Market volatility doesn't mean panic—it means opportunity for disciplined SIP investors.</p>
+            </div>
+            <div class="insta-post-auto">
+              <div class="insta-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+              <p class="insta-caption">Understanding the difference between large cap, mid cap, and small cap mutual funds.</p>
+            </div>
+            <div class="insta-post-auto">
+              <div class="insta-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+              <p class="insta-caption">Why goal-based investing beats trying to time the market every single time.</p>
+            </div>
+            <div class="insta-post-auto">
+              <div class="insta-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+              <p class="insta-caption">Sunday Series: Breaking down this week's market movements and what they mean for investors.</p>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="insta-post-auto">
+              <div class="insta-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+              <p class="insta-caption">Market volatility doesn't mean panic—it means opportunity for disciplined SIP investors.</p>
+            </div>
+            <div class="insta-post-auto">
+              <div class="insta-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+              <p class="insta-caption">Understanding the difference between large cap, mid cap, and small cap mutual funds.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Peter Lynch Quote -->
+      <div class="quote-block lynch">
+        <blockquote>
+          <p>"Know what you own, and know why you own it."</p>
+          <cite>— Peter Lynch</cite>
+        </blockquote>
+      </div>
+
+      <!-- Books -->
+      <div class="section-wrapper">
+        <div class="section-label">BOOKS THAT SHAPED MY PHILOSOPHY</div>
+        <div class="books-grid">
+          <a href="https://www.amazon.in/One-Up-Wall-Street-Already/dp/0743200403" target="_blank" class="book-card">
+            <div class="book-emoji">📖</div>
+            <div class="book-title">One Up On Wall Street</div>
+            <div class="book-author">Peter Lynch</div>
+            <div class="book-link-text">View on Amazon →</div>
+          </a>
+
+          <a href="https://www.amazon.in/Almanack-Naval-Ravikant-Wealth-Happiness/dp/1544514212" target="_blank" class="book-card">
+            <div class="book-emoji">📖</div>
+            <div class="book-title">The Almanack of Naval Ravikant</div>
+            <div class="book-author">Eric Jorgenson</div>
+            <div class="book-link-text">View on Amazon →</div>
+          </a>
+
+          <a href="https://www.amazon.in/Intelligent-Investor-English-Paperback-2013/dp/0062312685" target="_blank" class="book-card">
+            <div class="book-emoji">📖</div>
+            <div class="book-title">The Intelligent Investor</div>
+            <div class="book-author">Benjamin Graham</div>
+            <div class="book-link-text">View on Amazon →</div>
+          </a>
+
+          <a href="https://www.amazon.in/Common-Stocks-Uncommon-Profits-Writings/dp/0471445509" target="_blank" class="book-card">
+            <div class="book-emoji">📖</div>
+            <div class="book-title">Common Stocks and Uncommon Profits</div>
+            <div class="book-author">Philip Fisher</div>
+            <div class="book-link-text">View on Amazon →</div>
+          </a>
+
+          <a href="https://www.amazon.in/Psychology-Money-Morgan-Housel/dp/9390166268" target="_blank" class="book-card">
+            <div class="book-emoji">📖</div>
+            <div class="book-title">The Psychology of Money</div>
+            <div class="book-author">Morgan Housel</div>
+            <div class="book-link-text">View on Amazon →</div>
+          </a>
+
+          <a href="https://www.amazon.in/Coffee-Can-Investing-Portfolio-Phenomenal/dp/0670089869" target="_blank" class="book-card">
+            <div class="book-emoji">📖</div>
+            <div class="book-title">Coffee Can Investing</div>
+            <div class="book-author">Saurabh Mukherjea</div>
+            <div class="book-link-text">View on Amazon →</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Naval Quote -->
+      <div class="quote-block naval">
+        <blockquote>
+          <p>"Seek wealth, not money or status. Wealth is having assets that earn while you sleep."</p>
+          <cite>— Naval Ravikant</cite>
+        </blockquote>
+      </div>
+
+      <!-- Connect -->
+      <div class="section-wrapper">
+        <div class="section-label">CONNECT</div>
+        <div class="connect-grid">
+          <div class="connect-card">
+            <div class="connect-icon">📧</div>
+            <div class="connect-label">Newsletter</div>
+            <a href="https://substack.com/@fundyourgoals" target="_blank">Subscribe to Sunday Series</a>
+          </div>
+          <div class="connect-card">
+            <div class="connect-icon">📱</div>
+            <div class="connect-label">Instagram</div>
+            <a href="https://instagram.com/fundyourgoals" target="_blank">@fundyourgoals</a>
+          </div>
+          <div class="connect-card">
+            <div class="connect-icon">💼</div>
+            <div class="connect-label">LinkedIn</div>
+            <a href="https://linkedin.com" target="_blank">Connect professionally</a>
+          </div>
+          <div class="connect-card">
+            <div class="connect-icon">📬</div>
+            <div class="connect-label">Email</div>
+            <a href="/cdn-cgi/l/email-protection#395a56574d585a4d795f4c575d40564c4b5e5658554a175057"><span class="__cf_email__" data-cfemail="9dfef2f3e9fcfee9ddfbe8f3f9e4f2e8effaf2fcf1eeb3f4f3">[email&#160;protected]</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p><strong>Rahul MJ</strong> • AMFI Registered Mutual Fund Distributor (ARN: 266912) • Sub-Broker with Wealthy • Bengaluru</p>
+        <p class="disclaimer">Mutual fund investments are subject to market risks. Please read all scheme related documents carefully before investing. Past performance is not indicative of future returns.</p>
+        <p class="copyright">© 2026 Rah
